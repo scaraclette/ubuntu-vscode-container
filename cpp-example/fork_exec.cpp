@@ -9,6 +9,7 @@ void testCreateChild() {
     cout << "Current PID: " << getpid() << endl;
     cout << "About to Fork" << endl; // Parent process
     int fork_result = fork();
+    cout << "--------" << endl;
     cout << "Current returned pid: " << fork_result << endl;
     cout << "I've forked" << endl;
 }

@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --no-install-recommends \
 	build-essential \
 	cmake	\
 	git \
@@ -18,4 +18,5 @@ RUN apt-get update && apt-get install -y \
 	libeigen3-dev \
 	liblapack-dev \
 	libatlas-base-dev \
-	libgomp1 
+	libgomp1 \
+	gdb
